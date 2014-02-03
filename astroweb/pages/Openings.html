@@ -1,68 +1,94 @@
 <!DOCTYPE html>
 <html>
-<body>
-<head>
-<meta charset="utf-8">
-<title>Openings</title>
-	<link rel="stylesheet" href="page.css" type="text/css" />
-</head>
 
-<div id="wrapper"> 
+  <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,900|Erica+One|Candal|Montserrat+Subrayada:400,700|Fenix|Cantata+One|Oranienbaum|Audiowide|Monoton|Bowlby+One|Ubuntu+Mono:400,700|Geostar|Arvo:400,700|Atomic+Age|Unlock|Monofett|Ubuntu+Condensed|Poller+One|Krona+One|Oswald:700' rel='stylesheet' type='text/css'>
 
-<div id="title">
-<div id="logo">
-<p>
-OPENINGS</p>
-</div>
-</div>
+  <body>
+    <head>
+      <meta charset="utf-8">
+      <title>Openings</title>
+      <link rel="stylesheet" href="page_2.css" type="text/css" />
+    </head>
 
-<div id="case">
-<div id="menu">
-<ul>
-	<li><a href="../home.html">Home</a>
-	</li>
-	<li><a href="./Members.html">Members</a>
-	</li>
-	<li><a href="./AMR.html">AMR</a>
-	</li>
-	<li><a href="./Publications.html">Publications</a>
-	</li>
-	<li><a href="./Research.html">Research</a>
+    <div id="wrapper">
+
+      <div id="case">
+	<div id="title" >
+	  <div class="flip-text">
+	    Openings
+	  </div>
+	</div>
+	<div id="upper">
+	  <div id="logo">
+	    <div class="alignlogo">
+	      <a href="../index.html"> <img src="../images/250px-Triangulum.nebula.full.jpg" alt="Klein" style="height:120px; margin-top:5px; margin-bottom: 5px; margin-left: 10px;" >  </a>
+	      <a href="../index.html"> <img src="../images/blacklogo_3.png" alt="logo" style=" height:120px; width: 55%; overflow: hidden; margin-left: 10px;"></a>
+	    </div>
+	  </div>
+	</div>
+
+	<div id="text-box">
+	  <div id="toolbar">
+	    <ul>
+	      <li><a href="../index.html">Home</a>
+	      </li>
+	      <li><a href="./Members.html">Members</a>
+	      </li>
+	      <li ><a href="./AMR.html">AMR</a>
+	      </li>
+	      <li><a href="./Publications.html">Publications</a>
+	      </li>
+	      <li><a href="./Research.html"> Research</a>
 		<ul >
-			<li><a href="./research/highmass.html">High-Mass</a></li>
-			<li><a href="./research/GMCs.html">GMCs</a></li>
+		  <li><a href="./research/highmass.html">High-Mass</a></li>
+		  <li><a href="./research/GMCs.html">GMCs</a></li>
 		</ul>
-	</li>
-	<li style="padding-left: 30px">Openings
-	</li>
-</ul>
+	      </li>
+	      <li><a href="./Openings.html"><FONT COLOR=yellow style="font:bold 18px 'Arvo',Helvetica,Arial,sans-serif;">Openings</FONT></a>
+	      </li>
+	    </ul>
 
-</div>
-<div id="textbox">
-<div class="textalign">
-<div class="text-entry">
- The Berkeley Astrophysical Fluid Dynamics Group is
-		  looking for two new grad students to join. There are
-		  a number of possible research projects (see <a
-		    href="./Research.html">research</a> for some
-		  ideas), but two projects of particular interest are
-		  high mass star formation and magnetic effects in low
-		  mass star formation.<p>
+	  </div>
+	  <div class="text-align">
 
-		  If you're interested, e-mail <a
-		    href="mailto:rklein@astron.berkeley.edu">Richard
-		    Klein</a> or <a
-		    href="mailto:cmckee@astron.berkeley.edu">Chris
-		    McKee</a>.
+	    <div class="text-entry">
+	      The Berkeley Astrophysical Fluid Dynamics Group is
+	      looking for two new grad students to join. There are
+	      a number of possible research projects (see <a
+							     href="./Research.html">research</a> for some
+	      ideas), but two projects of particular interest are
+	      high mass star formation and magnetic effects in low
+	      mass star formation.<p>
 
-</div>
+		If you're interested, e-mail <a
+						href="mailto:rklein@astron.berkeley.edu">Richard
+		  Klein</a> or <a
+				  href="mailto:cmckee@astron.berkeley.edu">Chris
+		  McKee</a>.
 
-</div>
-</div>
-</div>
-</div>
+	    </div>
+	  </div>
 
-
-</body>
-
+	</div>
+      </div>
+    </div>
+  </body>
 </html>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script src="./jquery.sticky.js"></script>
+<script>
+  $(window).scroll(function(){
+  if  ($(window).scrollTop() >= 229){
+  document.getElementById("toolbar").style.position="fixed";
+  document.getElementById("toolbar").style.marginTop="-160px";
+  document.getElementById("toolbar").style.borderBottom="3px ridge #c0c0c0";
+  
+  
+  } else {
+  $('#toolbar').css({position:'relative'});
+  document.getElementById("toolbar").style.marginTop="70px";
+  document.getElementById("toolbar").style.border="2px solid transparent";
+  }
+
+  });
+</script>

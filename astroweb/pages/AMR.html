@@ -1,126 +1,166 @@
 <!DOCTYPE html>
 <html>
-<body>
-<head>
-<meta charset="utf-8">
-<title>AMR</title>
-	<link rel="stylesheet" href="page.css" type="text/css" />
-</head>
+<link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,900|Erica+One|Candal|Montserrat+Subrayada:400,700|Fenix|Cantata+One|Oranienbaum|Audiowide|Monoton|Bowlby+One|Ubuntu+Mono:400,700|Geostar|Arvo:400,700|Atomic+Age|Unlock|Monofett|Ubuntu+Condensed|Poller+One|Krona+One|Oswald:700' rel='stylesheet' type='text/css'>
+  <body>
+    <head>
+      <meta charset="utf-8">
+      <title>AMR</title>
+      <link rel="stylesheet" href="page_2.css" type="text/css" />
+    </head>
 
-<div id="wrapper"> 
+    <div id="wrapper">
 
-<div id="title">
-<div id="logo">
-<p>
- AMR
+      <div id="case">
+	<div id="title" >
+	  <div class="flip-text">
+	    AMR
+	  </div>
+	</div>
+	<div id="upper">
+	  <div id="logo">
+	    <div class="alignlogo">
+	      <a href="../index.html"> <img src="../images/250px-Triangulum.nebula.full.jpg" alt="Klein" style="height:120px; margin-top:5px; margin-bottom: 5px; margin-left: 10px;" >  </a>
+	      <a href="../index.html"> <img src="../images/blacklogo_3.png" alt="logo" style=" height:120px; width: 55%; overflow: hidden; margin-left: 10px;"></a>
+	    </div>
+	  </div>
+	</div>
 
-</p>
-</div>
-</div>
+	<div id="text-box">
+	  <div id="toolbar">
+	    <ul>
+	      <li><a href="../index.html">Home</a>
+	      </li>
+	      <li><a href="./Members.html">Members</a>
+	      </li>
+	      <li ><a href="./AMR.html"><FONT COLOR=yellow style="font:bold 18px 'Arvo',Helvetica,Arial,sans-serif;">AMR</FONT></a>
+	      </li>
+	      <li><a href="./Publications.html">Publications</a>
+	      </li>
+	      <li><a href="./Research.html"> Research</a>
+		<ul >
+		  <li><a href="./research/highmass.html">High-Mass</a></li>
+		  <li><a href="./research/GMCs.html">GMCs</a></li>
+		</ul>
+	      </li>
+	      <li><a href="./Openings.html">Openings</a>
+	      </li>
+	    </ul>
 
-<div id="case">
-
-<div id="menu" >
-dasds
-<div class="rotate-text" >
- Line One adaw;dokawo;dkddddddddddddddddddddddddd dsa hihihi dsssssssssssssssssssssssssssssssssssssssssssssssssssdadwladjwaldjwalidjwaildjawljdiwddddddddddddddddddddddddddddddddsssssssssssssssssssssssssssssssssssssssssssssssssssdadwladjwaldjwalidjwaildjawljdiwddddddddddddddddddddddddddddddd
-</div>
-
-</div>
-<div id="textbox">
-<div class="textalign">
-<div class="title-entry">
-Solving Problems on a Grid
-</div>
-<div class="text-entry">
-	  Central to any direct computational method is the
-		  manner in which it discretizes the continuous domain
-		  of interest into a grid of many individual
-		  elements. This grid may be <I>static</I>,
-		  established once and for all at the beginning of
-		  the computation, or it may be <I>dynamic</I>,
-		  tracking the features of the result as the
-		  computation progresses. If the computation has features
-		  which one wants to track which are much smaller than
-		  the overall scale of the problem, and which
-		  move in time, then one must either include
-		  many more static grids to cover the region of
-		  interest, or adopt a dynamic scheme. The
-		  advantages of a dynamic gridding scheme are:<P>
-
-		  1) Increased computational savings over a static grid
-		  approach.<P>
-
-		  2) Increased storage savings over a static grid
-		  approach.<P>
-
-		  3) Complete control of grid resolution, compared to
-		  the fixed resolution of a static grid approach.
-</div>
-<div class="title-entry">
-Introduction to Adaptive Mesh Refinement
-</div>
-<div class="text-entry">
-
-		  In a series of papers, Berger, Oliger, and Colella
-		  developed an algorithm for dynamic gridding called
-		  local adaptive mesh refinement. The algorithm begins
-		  with the entire computational domain covered with a
-		  coarsely resolved base-level regular Cartesian grid.
-		  As the calculation progresses, individual grid cells
-		  are tagged for refinement, using a criterion that
-		  can either be user-supplied (i.e. mass per cell
-		  remains constant, hence higher density regions are
-		  more highly resolved) or based on Richardson
-		  extrapolation.<p>
-
-		  All tagged cells are then refined, meaning that a
-		  finer grid is overlayed on the coarse one. After
-		  refinement, individual grid patches on a single
-		  fixed level of refinement are passed off to an
-		  integrator which advances those cells in
-		  time. Finally, a correction procedure is implemented
-		  to correct the transfer along coarse-fine grid
-		  interfaces, to insure that the amount of any
-		  conserved quantity leaving one cells exactly
-		  balances the amount enter the bordering cell. If at
-		  some point the level of refinement in a cell is
-		  greater than required, the high resolution grid may
-		  be removed and replaced with a coarser one.<P>
+	  </div>
+	  <div class="text-align">
 
 
-		  
-		  <IMG SRC="../images/amr_img2.gif" align="left" border="10">
+	    <div class="title-entry">
+	      Solving Problems on a Grid
+	    </div>
+	    <div class="text-entry">
+	      Central to any direct computational method is the
+	      manner in which it discretizes the continuous domain
+	      of interest into a grid of many individual
+	      elements. This grid may be <I>static</I>,
+	      established once and for all at the beginning of
+	      the computation, or it may be <I>dynamic</I>,
+	      tracking the features of the result as the
+	      computation progresses. If the computation has features
+	      which one wants to track which are much smaller than
+	      the overall scale of the problem, and which
+	      move in time, then one must either include
+	      many more static grids to cover the region of
+	      interest, or adopt a dynamic scheme. The
+	      advantages of a dynamic gridding scheme are:<P>
+
+		1) Increased computational savings over a static grid
+		approach.<P>
+
+		2) Increased storage savings over a static grid
+		approach.<P>
+
+		3) Complete control of grid resolution, compared to
+		the fixed resolution of a static grid approach.
+	    </div>
+	    <div class="title-entry">
+	      Introduction to Adaptive Mesh Refinement
+	    </div>
+	    <div class="text-entry">
+
+	      In a series of papers, Berger, Oliger, and Colella
+	      developed an algorithm for dynamic gridding called
+	      local adaptive mesh refinement. The algorithm begins
+	      with the entire computational domain covered with a
+	      coarsely resolved base-level regular Cartesian grid.
+	      As the calculation progresses, individual grid cells
+	      are tagged for refinement, using a criterion that
+	      can either be user-supplied (i.e. mass per cell
+	      remains constant, hence higher density regions are
+	      more highly resolved) or based on Richardson
+	      extrapolation.<p>
+
+		All tagged cells are then refined, meaning that a
+		finer grid is overlayed on the coarse one. After
+		refinement, individual grid patches on a single
+		fixed level of refinement are passed off to an
+		integrator which advances those cells in
+		time. Finally, a correction procedure is implemented
+		to correct the transfer along coarse-fine grid
+		interfaces, to insure that the amount of any
+		conserved quantity leaving one cells exactly
+		balances the amount enter the bordering cell. If at
+		some point the level of refinement in a cell is
+		greater than required, the high resolution grid may
+		be removed and replaced with a coarser one.<P>
 
 
-		  The image to the left
-		  shows the grid structure of an AMR calculation
-		  of a shock impacting an inclined slope. Each of the
-		  boxes is a grid; the more boxes it is nested within,
-		  the higher the level of refinments. It is adapted From
-		  Colella and Crutchfield (1994).</P>
-
-		  As the image shows, the algorithm uses high
-		  resolution grids only at the <i>physical
-		    locations</i> and <i>times</i>
-		  where they are required. This lets us solve problems
-		  that are completely intractable on a uniform grid;
-		  for example,we have used the code to model the
-		  filamentary nature of isothermal collapse down to an
-		  effective resolution of 131,072 cells per initial
-		  cloud radius, corresponding to a resolution of 10^15
-		  cells on a uniform grid.<p>
-
-		  For more examples of our use of AMR in astrophysical
-		  fluid dynamics, see the <a
-		    href="Research.html">research page</a>.
-</div>
-</div>
-</div>
-</div>
-</div>
+		
+		<IMG SRC="../images/amr_img2.gif" align="left" border="10">
 
 
-</body>
+		The image to the left
+		shows the grid structure of an AMR calculation
+		of a shock impacting an inclined slope. Each of the
+		boxes is a grid; the more boxes it is nested within,
+		the higher the level of refinments. It is adapted From
+		Colella and Crutchfield (1994).</P>
 
+	      As the image shows, the algorithm uses high
+	      resolution grids only at the <i>physical
+		locations</i> and <i>times</i>
+	      where they are required. This lets us solve problems
+	      that are completely intractable on a uniform grid;
+	      for example,we have used the code to model the
+	      filamentary nature of isothermal collapse down to an
+	      effective resolution of 131,072 cells per initial
+	      cloud radius, corresponding to a resolution of 10^15
+	      cells on a uniform grid.<p>
+
+		For more examples of our use of AMR in astrophysical
+		fluid dynamics, see the <a
+					   href="Research.html">research page</a>.
+	    </div>
+
+
+
+	  </div>
+
+	</div>
+      </div>
+    </div>
+  </body>
 </html>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script src="./jquery.sticky.js"></script>
+<script>
+  $(window).scroll(function(){
+  if  ($(window).scrollTop() >= 229){
+  document.getElementById("toolbar").style.position="fixed";
+  document.getElementById("toolbar").style.marginTop="-160px";
+  document.getElementById("toolbar").style.borderBottom="3px ridge #c0c0c0";
+  
+  
+  } else {
+  $('#toolbar').css({position:'relative'});
+  document.getElementById("toolbar").style.marginTop="70px";
+  document.getElementById("toolbar").style.border="2px solid transparent";
+  }
+
+  });
+</script>

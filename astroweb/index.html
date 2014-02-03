@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+<meta charset="utf-8">
+<title>Home</title>
+	<link rel="stylesheet" href="home_6.css" type="text/css" />
+</head>
+<script type="text/javascript" src="/js/jquery.js"></script>
+
+<script type="text/javascript" src="/js/easySlider.js"></script>
+<div id="wrapper">
+
+
+
+
+
+<div id="mid">
+<div id="upper">
+<div id="logo">
+<div class="alignlogo">
+<a href="./links.html"> <img src="./images/250px-Triangulum.nebula.full.jpg" alt="Klein" style="height:120px; margin-top:5px; margin-bottom: 5px; margin-left: 10px;" >  </a>
+<a href="./index.html"> <img src="./images/smallerlogo_2.png" alt="logo" style=" height:130px; width: 1000px; overflow: hidden; margin-left: 10px;"></a>
+</div>
+</div>
+</div>
+<div id="toolbar">
+<ul >
+
+	<li><a href="./pages/Members.html">Members</a>
+	</li>
+	<li><a href="./pages/AMR.html">AMR</a>
+	</li>
+	<li><a href="./pages/Publications.html">Publications</a>
+	</li>
+	<li><a href="./pages/Research.html">Research</a>
+			<ul >
+			<li><a href="./pages/research/highmass.html">High-Mass Formation</a></li>
+			<li><a href="./pages/research/GMCs.html">GMCs</a></li>
+		</ul>
+	</li>
+	<li><a href="./pages/Openings.html">Openings</a>
+	</li>
+</ul>
+		
+</div>
+	<div id="textalign">
+	<img src="./images/smooth_disk_animation.gif" alt="smooth disk" align=right width="350px" >
+
+	 The Berkeley Astrophysical Fluid Dynamics Group uses
+		  state-of-the-art numerical techniques to
+		  study the behavior of gas in the interstellar medium,
+		  including physical effects such as self-gravity,
+		  magnetic fields, and radiative transfer. Using these
+		  methods, we have investigated supernova remnants,
+		  star formation, shock-cloud interactions, and
+		  similar phenomena demanding accurate,
+		  high-resolution computation.
+		  
+
+
+
+
+
+</div>
+</div>
+
+
+</div>
+</body>
+</html>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script src="./jquery.sticky.js"></script>
+<script>
+  $(window).scroll(function(){
+  if  ($(window).scrollTop() >= 229){
+  document.getElementById("toolbar").style.position="fixed";
+  document.getElementById("toolbar").style.marginTop="-165px";
+  } else {
+         $('#toolbar').css({position:'relative'});
+  document.getElementById("toolbar").style.marginTop="70px";
+        }
+});
+  </script>
